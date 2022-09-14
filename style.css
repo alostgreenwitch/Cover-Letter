@@ -1,0 +1,35 @@
+#profile {
+    color: black;
+    text-align: center;
+}
+
+#summary {
+    width: 300px;
+    border: 15px solid rgb(242, 250, 242);
+    padding: 50px;
+    margin: 20px;
+}
+
+#work_experience {
+    width: 300px;
+    border: 15px solid rgb(235, 245, 235);
+    padding: 50px;
+    margin: 20px;
+}
+.skills {
+    width: 300px;
+    border: 15px solid rgb(235, 247, 235);
+    padding: 50px;
+    margin: 20px;
+    font-family: 'Aguafina Script', cursive;
+}
+
+body {
+    text-align: center;
+    background-color: rgba(12, 9, 5, 0.938);
+}
+
+h1,h2,h3 {
+    font-family: 'Nabla', cursive;
+}
+
