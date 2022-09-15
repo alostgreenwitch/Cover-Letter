@@ -1,20 +1,28 @@
 <!DOCTYPE html> 
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Amita&family=Bodoni+Moda:ital,opsz@0,6..96;1,6..96&family=Frank+Ruhl+Libre:wght@300;900&family=Homemade+Apple&family=Italiana&family=Kristi&family=La+Belle+Aurore&family=Meddon&family=Metamorphous&family=Montserrat+Subrayada&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Nabla&family=Oranienbaum&family=Over+the+Rainbow&family=Prata&family=Rakkas&family=Satisfy&family=Sedgwick+Ave&family=Splash&family=Square+Peg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@0,500;1,400&family=Ms+Madi&family=Nabla&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <!--The goal is to show as much skill as possible. Create different pages for different sections.
   Make things as colorful and overlapped as possible to show creativity. The goal is to add
 sidebars, menu, at least 2 pages, and making the orientation the same for multiple devices-->
   <body>
+    <div id="menu">
+      <ul>
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+    </div>
+    <p>Welcome to the Portfolio of...</p>
     <h1>Nycolette Lartigue</h1>
     <!---This is the profile section above the horizontal line.
     Make sure to change the font, make a button for the "click here" portion-->
     <div id="profile">
-      <img src="profile images/profile-image.png" width="25%">
-      <h3>"Live Life to the Fullest"</h3>
-      <a href="future-projects.html">Click here to see what I'm up to...</a>   
+      <img src="profile images/png-modified-circle.png" width="25%">
+      <h3>"Life is About the Journey Not the Destination"</h3>
     </div>
     <hr>
     <h2>Summary</h2>
@@ -22,20 +30,53 @@ sidebars, menu, at least 2 pages, and making the orientation the same for multip
     , etc. Need this to be centered as well-->
     <div id="summary">
       <h2>Hey there</h2>
+      <div>
+        <p>Hi there, how are you today?</p><span><img src="profile images/profile-image.png" width="10%">
+      </div>
     </div>
     <hr>
-    <h2>Work Experience</h2>
-    <!--This is the entire box for the Work Experience. Adjust font, colors, radius
-    , etc. Need this to be centered as well-->
-    <div id="work_experience">
-      <!---This is where the work experience table is-->
-      <h2>Work Work Work</h2>
+
+    <div class="row">
+      <div class="column1" style="@mediascreen">
+        <div id="work_experience">
+        <!---This is where the work experience table is-->
+        <h2>Work experience</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Dates</th>
+              <th>Experience</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>2021-2022</td>
+            <td>Tech Support</td>
+          </tr>
+        </table>
+        </div>
     </div>
+      <div class="column1">
+        <div id="skills">
+          <h2>I'm Good at..</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Dates</th>
+                <th>Experience</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>2010</td>
+              <td>2015</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <hr>
-    <h2>Skills</h2>
-    <!--Skills and the adjacent icons go here-->
-    <div class="skills">
-      <h2>I'm Good at..</h2>
-    </div>
+    <br>
+    <br>
     
   </body>
+  </html>

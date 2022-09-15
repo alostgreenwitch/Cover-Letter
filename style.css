@@ -1,35 +1,160 @@
-#profile {
-    color: black;
+#menu {
+    display: block;
+    color: white;
     text-align: center;
+    text-decoration: none;
+    margin: 0;
+ 
+} 
+
+#profile {
+    color: rgb(240, 222, 222);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #summary {
-    width: 300px;
-    border: 15px solid rgb(242, 250, 242);
+    width: 45%;
+    border: 4px solid rgb(242, 250, 242);
     padding: 50px;
     margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 180, 180);
+    color:rgb(0, 0, 0);
+    border-radius: 50%;
+    display: fixed;
 }
 
 #work_experience {
-    width: 300px;
-    border: 15px solid rgb(235, 245, 235);
-    padding: 50px;
-    margin: 20px;
+    width: 400px;
+    border: 1rem solid rgb(242, 250, 242);
+    background-color: rgb(233, 180, 180);
+    padding-bottom: 1rem;
+    margin: 0 auto;
 }
-.skills {
-    width: 300px;
-    border: 15px solid rgb(235, 247, 235);
-    padding: 50px;
-    margin: 20px;
-    font-family: 'Aguafina Script', cursive;
+
+#skills {
+    width: 400px;
+    border: 1rem solid rgb(242, 250, 242);
+    background-color: rgb(233, 180, 180);
+    color:rgb(0, 0, 0)
 }
+
+/*the columns overlap, so need to find a way for it to 
+find that overlap=stacked on top of one another.*/
+
+.column1 {
+    float: left;
+    width: 100%;
+    column-gap: 40px;
+    flex: 10%;
+    margin-left: 0 auto;
+    position: sticky;
+    padding-left: 2rem;
+    box-sizing: content-box;
+}  
+
+.row {
+    display: flex;
+    overflow: hidden;
+
+ }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Not used yet*/
+.continue .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: hsl(123, 68%, 82%);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(241, 227, 227);
+}
+
+/*default style for body*/
 
 body {
     text-align: center;
-    background-color: rgba(12, 9, 5, 0.938);
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    color: aliceblue;
 }
 
-h1,h2,h3 {
-    font-family: 'Nabla', cursive;
+/*default style for h1*/
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
 }
 
+/*default style for h2 & h3*/
+
+h2,h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+/*unvisited link*/
+
+a {
+    color: rgb(17, 15, 15);
+    font-family: 'Abril Fatface', cursive;
+    display: block;
+    padding: 8px;
+    background-color: #fcc8c87a;
+}
+  
+  /* visited link */
+  a:visited {
+    color: rgb(117, 8, 53);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(124, 10, 15);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(56, 11, 11);
+  }
+
+  hr {
+    border-top: 3px dotted rgba(245, 222, 222, 0.068);
+    border-bottom: 3px dotted rgba(236, 225, 225, 0.096);
+    width: 53%;
+  } 
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: rgb(233, 208, 208);
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  li {
+    float: right;
+  }
+
+  table, th, td {
+        border: 1px solid;
+        align-content: center;
+        padding: 10px;
+        margin: auto;
+      }
