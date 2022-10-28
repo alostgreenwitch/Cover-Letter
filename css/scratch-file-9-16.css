@@ -1,17 +1,21 @@
 #menu {
-    display: block;
     color: white;
+    display: block;
+    margin: 0;
     text-align: center;
     text-decoration: none;
-    margin: 0;
- 
 } 
 
 #profile {
     color: rgb(240, 222, 222);
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+#profile-icon-image {
+    content: "Images";
+    margin-right: 20rem;
 }
 
 #summary {
@@ -27,7 +31,7 @@
     display: fixed;
 }
 
-#work_experience {
+.work_experience {
     width: 400px;
     border: 1rem solid rgb(242, 250, 242);
     background-color: rgb(233, 180, 180);
@@ -68,6 +72,27 @@ find that overlap=stacked on top of one another.*/
     display: table;
     clear: both;
   }
+
+/*Practice*/
+
+.practice_box_one {
+    background-color: azure;
+    width: 100px
+    padding-left 10px
+    /*margin is 25px*/
+}
+.practice-box-two {
+    background-color: #f0d6d67a;
+    width: 100%
+    padding-bottom
+
+}
+
+.practice-box-three {
+    background-color: #e2f0d67a;
+    width: 100px
+}
+
 
 /*Not used yet*/
 .continue .button {
@@ -120,17 +145,17 @@ a {
   
   /* visited link */
   a:visited {
-    color: rgb(117, 8, 53);
+    color: rgb(226, 170, 193);
   }
   
   /* mouse over link */
   a:hover {
-    color: rgb(124, 10, 15);
+    color: rgb(235, 207, 208);
   }
   
   /* selected link */
   a:active {
-    color: rgb(56, 11, 11);
+    color: rgb(236, 208, 208);
   }
 
   hr {
@@ -158,3 +183,7 @@ a {
         padding: 10px;
         margin: auto;
       }
+  div {
+    display:block
+  }
+

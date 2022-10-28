@@ -1,82 +1,115 @@
 <!DOCTYPE html> 
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Spice&family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@0,500;1,400&family=Ms+Madi&family=Nabla&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <!--The goal is to show as much skill as possible. Create different pages for different sections.
-  Make things as colorful and overlapped as possible to show creativity. The goal is to add
-sidebars, menu, at least 2 pages, and making the orientation the same for multiple devices-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  
+  <!-- CSS stylesheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="D:\Portfolio Projects\Udemy\WEB DEV BOOTCAMP\Cover-Letter\css\master-style.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Crimson+Text:wght@600&family=Meddon&family=Playfair+Display&family=Zeyada&display=swap" rel="stylesheet">
+ 
+    <!--font-family: 'Amita', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Meddon', cursive;
+font-family: 'Playfair Display', serif;*preferred
+font-family: 'Zeyada', cursive;-->
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</head>
+
+
   <body>
-    <div id="menu">
-      <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
-      </ul>
-    </div>
-    <p>Welcome to the Portfolio of...</p>
-    <h1>Nycolette Lartigue</h1>
-    <!---This is the profile section above the horizontal line.
-    Make sure to change the font, make a button for the "click here" portion-->
-    <div id="profile">
-      <img src="profile images/png-modified-circle.png" width="25%">
-      <h3>"Life is About the Journey Not the Destination"</h3>
-    </div>
-    <hr>
-    <h2>Summary</h2>
-    <!--This is the entire box for the summary. Adjust font, colors, radius
-    , etc. Need this to be centered as well-->
-    <div id="summary">
-      <h2>Hey there</h2>
-      <div>
-        <p>Hi there, how are you today?</p><span><img src="profile images/profile-image.png" width="10%">
-      </div>
-    </div>
-    <hr>
 
-    <div class="row">
-      <div class="column1" style="@mediascreen">
-        <div id="work_experience">
-        <!---This is where the work experience table is-->
-        <h2>Work experience</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Dates</th>
-              <th>Experience</th>
-            </tr>
-          </thead>
-          <tr>
-            <td>2021-2022</td>
-            <td>Tech Support</td>
-          </tr>
-        </table>
+    <section id="top">
+      <div class="top-container">
+        <div class="nav-bar">
+          <nav class="navbar fixed-top navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="icons/skills/women-svg.svg" alt="profil-nl-image" width="50rem" height="50rem">
+                NL</a>
+              </div>
+            </div>
+          </nav>
         </div>
-    </div>
-      <div class="column1">
-        <div id="skills">
-          <h2>I'm Good at..</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Dates</th>
-                <th>Experience</th>
-              </tr>
-            </thead>
-            <tr>
-              <td>2010</td>
-              <td>2015</td>
-            </tr>
-          </table>
+        <img src="icons/skills/cloudy-top.png">
+       
+        <h1 class="name">I'm Nycolette</h1>
+        <p>a <span class="pro">pro</span>gramer</p>
+  
+        <img src="icons/skills/cloudy-bottom.png">
+      
+      </div>
+    </section>
+  
+    <section id="middle">
+      <div class="middle-container">
+        <div class="profile">
+          <img class="woman" src="icons/skills/woman.png" width="150px" height="150px" alt="black-coder">
+          <h2>Hello.</h2>
+          <p class="intro">I am a skilled, creative, intuitive programmer that loves solving problems and exploring solutions. Feel free to scroll down to see a few of my many skills.</p>
+        </div>
+        <hr>
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="skill-row">
+            <img class="computer" src="icons/skills/software-development.png" alt="computer-image">
+            
+            <h3>Natural Learner</h3>
+            <p> I love learning new things and find that programming is the perfect craft to continuously learn.
+              Over the course of 6 months, I've become proficient in HTML, CSS, Python, Go Lang, Bash Lang, and Linux. I'm currently teaching myself Java.</p>
+          
+          </div>
+          <div class="skill-row">
+            <img class="outdoors" src="icons/skills/energy.png" alt="energy-image">
+            
+            <h3>Outside-the-Box Thinker</h3>
+            <p>I truly find freedom when experiencing as much new 'things' as possible. Wether I am meeting new interesting people, 
+              finding a new hobby, finding new ways to program, traveling to a new or old city I am always excited to explore.</p>
+          
+          </div>
+          <div class="skill-row">
+            <img class="sustainable" src="icons/skills/earth.png">
+            
+            
+            <h3>Environmentally Conscious</h3>
+            <p>As someone who was raised with the mindset to always think about the environment, I find myself 
+              truly passionate when it comes to caring for our Earth. Eventually, I hope to make the Earth more sustainable in some way.
+            </p>
+          
+          </div>
+        </div>
+        <div class="contact-me">
+          <h2>Get in Touch</h2>
+          <h3>If you love the outdoors as much as I do.</h3>
+          <p class="contact-message">Love the outdoors as much as I do? Let's talk about how awesome it is! We can code while outdoors!</p>
+          <a class="btn" href="mailto:nyclartigue@gmail.com">CONTACT ME</a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <hr>
-    <br>
-    <br>
-    
+    <section id="bottom">
+      <div class="bottom-container">
+        <a class="footer-link" href="https://www.linkedin.com/in/nycolette-lartigue-44a74420b/">LinkedIn</a>
+        <a class="footer-link" href="https://github.com/alostgreenwitch">Github</a>
+        
+        <p class="copyright">©2022 Nycolette Lartigue.</p>
+      </div>
+    </section>
+
   </body>
   </html>
+
+  <!--End of Day Notes:
+  
+  10/27- finish making everything closer and continue with 
+        perfecting the skills & bottom containers -->
